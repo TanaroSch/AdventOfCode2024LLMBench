@@ -1,6 +1,6 @@
 # Advent of Code 2024 - as LLM benchmark
 
-I want to test differnt LLM's coding capabilities using the Advent of Code.
+I want to test differnt LLM's coding capabilities using the [Advent of Code](https://adventofcode.com/) challenges.
 
 ## Methodology
 To ensure comparability of the models, I use the same promt for all models. The initial prompt is:
@@ -17,20 +17,21 @@ The models are rated on 0-shot prompting. If this does not work, they are being 
 * GPT 4o -> GPT 4o used in the chat panel of GitHub Copilot without context of any file or workplace
 * o1-mini -> o1-mini used in the chat panel of GitHub Copilot without context of any file or workplace
 * o1-preview -> o1-preview used in the chat panel of GitHub Copilot without context of any file or workplace
+* o1 -> o1 used on https://chatgpt.com/
 * Qwen2.5-72b -> Qwen/Qwen2.5-72B-Instruct used on https://huggingface.co/chat
 * Qwen2.5-Coder-32b -> Qwen/Qwen2.5-Coder-32B-Instruct used on https://huggingface.co/chat
 * Qwen-QwQ -> Qwen/QwQ-32B-Preview used on https://huggingface.co/chat
 * R1-Lite -> DeepSeek-R1-Lite preview used on https://chat.deepseek.com/
 
 ## Overview
-| Day   | Claude 3.5 Sonnet | MS Copilot    | GPT 4o  | o1-mini | o1-preview   | Qwen2.5-72b   | Qwen2.5-Coder-32b | Qwen-QwQ  | R1-Lite   |
-| ---   | ---               | ---           | ---     | ---     | ---          | ---           | ---               | ---       | ---       |
-| 01    | 1/1               | 1/1           | 1/1     | 1/1     |              | 1/2 (s)       | 1/1               | 5/1 (l)   |           |
-| 02    | 1/1               | 1/1           | 1/1     |         |              | 1/2 (s)       | 1/1               | 1/1       |           |
-| 03    | 1/1               | 1/1           | 1/4 (l) |         |              | 1/2 (l)       | 1/1               | 1/1       |           |
-| 04    | 1/2 (l)           | 1/X (l)       | 1/X (l) | 1/2 (l) | 1/1          | 1/X (l)       | 1/X (l)           | 1/X (l,s) | 1/1       |
-| 05    | 1/1               | 1/1           | 3/1 (l) |         |              | 1/1           | X/- (l)           |           |           |
-
+| Day   | Claude 3.5 Sonnet | MS Copilot    | GPT 4o  | o1-mini | o1-preview    | o1  | Qwen2.5-72b   | Qwen2.5-Coder-32b | Qwen-QwQ  | R1-Lite   |
+| ---   | ---               | ---           | ---     | ---     | ---           | --- | ---           | ---               | ---       | ---       |
+| 01    | 1/1               | 1/1           | 1/1     | 1/1     |               | 1/1 | 1/2 (s)       | 1/1               | 5/1 (l)   |           |
+| 02    | 1/1               | 1/1           | 1/1     |         |               |     | 1/2 (s)       | 1/1               | 1/1       |           |
+| 03    | 1/1               | 1/1           | 1/4 (l) |         |               |     | 1/2 (l)       | 1/1               | 1/1       |           |
+| 04    | 1/2 (l)           | 1/X (l)       | 1/X (l) | 1/2 (l) | 1/1           |     | 1/X (l)       | 1/X (l)           | 1/X (l,s) | 1/1       |
+| 05    | 1/1               | 1/1           | 3/1 (l) |         |               |     | 1/1           | X/- (l)           |           |           |
+| 06    | 2/1 (l)           |               |         | 1/1     | 1/1           |     | 1/X (l)       |                   |           |           |
 
 ## Weird occurences
 * On day 2 GitHub Copilot repeatedly refused to answer my initial query. After ~5-10 attempts the safeguards allowed the answer. Since the answer was correct on the first successful response, I count this as one try.
