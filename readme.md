@@ -50,6 +50,8 @@ The models are rated on 0-shot prompting. If this does not work, they are being 
 
 
 
+
+
 ### Model Rankings
 The models are ranked using a composite score:
 - **Success Rate** (70% weight): Percentage of problems solved (both parts)
@@ -138,12 +140,6 @@ The models are ranked using a composite score:
 
 
 ### Detailed Results
-Color coding:
-- 🟩 One attempt (green)
-- 🟨 Multiple attempts (yellow/orange)
-- 🟥 Failed/Not attempted (red)
-- E column shows error types: (l)ogic, (s)yntax
-
 <table>
     <tr>
         <th align="center" rowspan="2">Day</th>
@@ -436,6 +432,8 @@ Color coding:
     </tr>
 </table>
 
+
+[color coded table](results/results.html)
 ### Data analytics
 
 ![Bar Plot showing the solve rates.](results/graphs/solve_rates.png)

@@ -43,12 +43,8 @@ def update_readme():
             '- **Final Score** = (Success Rate × 0.7) + (Efficiency Rate × 0.3)\n\n' + \
             rankings_table + \
             '\n\n### Detailed Results\n' + \
-            'Color coding:\n' + \
-            '- 🟩 One attempt (green)\n' + \
-            '- 🟨 Multiple attempts (yellow/orange)\n' + \
-            '- 🟥 Failed/Not attempted (red)\n' + \
-            '- E column shows error types: (l)ogic, (s)yntax\n\n' + \
-            results_table + '\n'
+            results_table + '\n' + \
+            '\n\n[color coded table](results/results.html)'
         
         # Check if we can find the Results section
         if not re.search(results_pattern, readme_content, re.DOTALL):
