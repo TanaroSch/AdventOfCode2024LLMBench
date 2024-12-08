@@ -49,348 +49,392 @@ The models are rated on 0-shot prompting. If this does not work, they are being 
 
 
 
-<style>
-table {
-    border-collapse: collapse;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    margin: 20px 0;
-    width: max-content;
-}
 
-th, td {
-    border: 1px solid #666;
-    padding: 2px 4px;
-    text-align: center;
-}
-
-th {
-    background-color: #4472C4;
-    color: white;
-}
-
-/* Top header row cells (model names) */
-tr:first-child th {
-    padding: 4px 8px;
-}
-
-/* Second header row cells (P1, P2, E) */
-tr:nth-child(2) th {
-    width: 30px;
-    padding: 2px;
-}
-
-/* First column (Day) */
-td:first-child, th:first-child {
-    width: 30px;
-}
-
-/* Data cells width */
-td {
-    width: 30px;
-}
-
-/* Value colors */
-.v1 { background-color: #90EE90; }  /* Light green */
-.v2 { background-color: #98FB98; }  /* Pale green */
-.v3 { background-color: #FFE4B5; }  /* Light orange */
-.v4 { background-color: #FFA07A; }  /* Light salmon */
-.v5 { background-color: #FFA500; }  /* Orange */
-.vx { background-color: #FFB6C6; }  /* Light red */
-</style>
+### Model Rankings
+The models are ranked using a composite score:
+- **Success Rate** (70% weight): Percentage of problems solved (both parts)
+- **Efficiency Rate** (30% weight): Average solve efficiency (1/number of attempts)
+- **Final Score** = (Success Rate × 0.7) + (Efficiency Rate × 0.3)
 
 <table>
     <tr>
-        <th rowspan="2">Day</th>
-        <th colspan="3">Claude 3.5 Sonnet</th>
-        <th colspan="3">MS Copilot</th>
-        <th colspan="3">GPT 4o</th>
-        <th colspan="3">o1-mini</th>
-        <th colspan="3">o1-preview</th>
-        <th colspan="3">o1</th>
-        <th colspan="3">Qwen2.5-72b</th>
-        <th colspan="3">Qwen2.5-Coder-32b</th>
-        <th colspan="3">Qwen-QwQ</th>
-        <th colspan="3">R1-Lite</th>
+        <th align="center">Rank</th>
+        <th align="center">Model</th>
+        <th align="center">Success Rate</th>
+        <th align="center">Efficiency Rate</th>
+        <th align="center">Final Score</th>
     </tr>
     <tr>
-        <th>P1</th><th>P2</th><th>E</th>
-        <th>P1</th><th>P2</th><th>E</th>
-        <th>P1</th><th>P2</th><th>E</th>
-        <th>P1</th><th>P2</th><th>E</th>
-        <th>P1</th><th>P2</th><th>E</th>
-        <th>P1</th><th>P2</th><th>E</th>
-        <th>P1</th><th>P2</th><th>E</th>
-        <th>P1</th><th>P2</th><th>E</th>
-        <th>P1</th><th>P2</th><th>E</th>
-        <th>P1</th><th>P2</th><th>E</th>
+        <td align="center">1</td>
+        <td align="center">o1-preview</td>
+        <td align="center">100.0%</td>
+        <td align="center">94.4%</td>
+        <td align="center">98.3</td>
     </tr>
     <tr>
-        <td>01</td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="v1">1</td>
-        <td class="v2">2</td>
-        <td>s</td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="v5">5</td>
-        <td class="v1">1</td>
-        <td>l</td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
+        <td align="center">2</td>
+        <td align="center">R1-Lite</td>
+        <td align="center">100.0%</td>
+        <td align="center">94.4%</td>
+        <td align="center">98.3</td>
     </tr>
     <tr>
-        <td>02</td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="v1">1</td>
-        <td class="v2">2</td>
-        <td>s</td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
+        <td align="center">3</td>
+        <td align="center">o1-mini</td>
+        <td align="center">100.0%</td>
+        <td align="center">90.0%</td>
+        <td align="center">97.0</td>
     </tr>
     <tr>
-        <td>03</td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="v1">1</td>
-        <td class="v4">4</td>
-        <td>l</td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="v1">1</td>
-        <td class="v2">2</td>
-        <td>l</td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
+        <td align="center">4</td>
+        <td align="center">o1</td>
+        <td align="center">100.0%</td>
+        <td align="center">90.0%</td>
+        <td align="center">97.0</td>
     </tr>
     <tr>
-        <td>04</td>
-        <td class="v1">1</td>
-        <td class="v2">2</td>
-        <td>l</td>
-        <td class="v1">1</td>
-        <td class="vx">X</td>
-        <td>l</td>
-        <td class="v1">1</td>
-        <td class="vx">X</td>
-        <td>l</td>
-        <td class="v1">1</td>
-        <td class="v2">2</td>
-        <td>l</td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="v1">1</td>
-        <td class="vx">X</td>
-        <td>l</td>
-        <td class="v1">1</td>
-        <td class="vx">X</td>
-        <td>l</td>
-        <td class="v1">1</td>
-        <td class="vx">X</td>
-        <td>l,s</td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
+        <td align="center">5</td>
+        <td align="center">Claude 3.5 Sonnet</td>
+        <td align="center">87.5%</td>
+        <td align="center">78.8%</td>
+        <td align="center">84.9</td>
     </tr>
     <tr>
-        <td>05</td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="v3">3</td>
-        <td class="v1">1</td>
-        <td>l</td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="vx">X</td>
-        <td class="vx">-</td>
-        <td>l</td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
+        <td align="center">6</td>
+        <td align="center">Qwen-QwQ</td>
+        <td align="center">75.0%</td>
+        <td align="center">81.8%</td>
+        <td align="center">77.0</td>
     </tr>
     <tr>
-        <td>06</td>
-        <td class="v2">2</td>
-        <td class="v1">1</td>
-        <td>l</td>
-        <td class="vx">X</td>
-        <td class="vx">-</td>
-        <td>l</td>
-        <td class="vx">X</td>
-        <td class="vx">-</td>
-        <td>l</td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="v3">3</td>
-        <td class="v1">1</td>
-        <td>l</td>
-        <td class="v1">1</td>
-        <td class="vx">X</td>
-        <td>l</td>
-        <td class="v2">2</td>
-        <td class="vx">X</td>
-        <td>l</td>
-        <td class="v1">1</td>
-        <td class="vx">X</td>
-        <td>l</td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
+        <td align="center">7</td>
+        <td align="center">MS Copilot</td>
+        <td align="center">56.3%</td>
+        <td align="center">100.0%</td>
+        <td align="center">69.4</td>
     </tr>
     <tr>
-        <td>07</td>
-        <td class="v1">1</td>
-        <td class="v3">3</td>
-        <td>l</td>
-        <td class="vx">X</td>
-        <td class="vx">-</td>
-        <td>l</td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="vx">X</td>
-        <td class="vx">-</td>
-        <td>l</td>
-        <td class="vx">X</td>
-        <td class="vx">-</td>
-        <td>l</td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
+        <td align="center">8</td>
+        <td align="center">GPT 4o</td>
+        <td align="center">68.8%</td>
+        <td align="center">68.8%</td>
+        <td align="center">68.8</td>
     </tr>
     <tr>
-        <td>08</td>
-        <td class="vx">X</td>
-        <td class="vx">-</td>
-        <td>l</td>
-        <td class="vx">X</td>
-        <td class="vx">-</td>
-        <td>l,s</td>
-        <td class="vx">X</td>
-        <td class="vx">-</td>
-        <td>l</td>
-        <td class="v1">1</td>
-        <td class="v2">2</td>
-        <td>l</td>
-        <td class="v2">2</td>
-        <td class="v1">1</td>
-        <td>l</td>
-        <td class="v1">1</td>
-        <td class="v1">1</td>
-        <td></td>
-        <td class="vx">X</td>
-        <td class="vx">-</td>
-        <td>l</td>
-        <td class="vx">X</td>
-        <td class="vx">-</td>
-        <td>l</td>
-        <td class="vx">X</td>
-        <td class="vx">-</td>
-        <td>l,s</td>
-        <td class="v1">1</td>
-        <td class="v2">2</td>
-        <td>l</td>
+        <td align="center">9</td>
+        <td align="center">Qwen2.5-72b</td>
+        <td align="center">62.5%</td>
+        <td align="center">78.6%</td>
+        <td align="center">67.3</td>
+    </tr>
+    <tr>
+        <td align="center">10</td>
+        <td align="center">Qwen2.5-Coder-32b</td>
+        <td align="center">50.0%</td>
+        <td align="center">91.7%</td>
+        <td align="center">62.5</td>
     </tr>
 </table>
 
+
+### Detailed Results
+Color coding:
+- 🟩 One attempt (green)
+- 🟨 Multiple attempts (yellow/orange)
+- 🟥 Failed/Not attempted (red)
+- E column shows error types: (l)ogic, (s)yntax
+
+<table>
+    <tr>
+        <th align="center" rowspan="2">Day</th>
+        <th align="center" colspan="3">o1-preview</th>
+        <th align="center" colspan="3">R1-Lite</th>
+        <th align="center" colspan="3">o1-mini</th>
+        <th align="center" colspan="3">o1</th>
+        <th align="center" colspan="3">Claude 3.5 Sonnet</th>
+        <th align="center" colspan="3">Qwen-QwQ</th>
+        <th align="center" colspan="3">MS Copilot</th>
+        <th align="center" colspan="3">GPT 4o</th>
+        <th align="center" colspan="3">Qwen2.5-72b</th>
+        <th align="center" colspan="3">Qwen2.5-Coder-32b</th>
+    </tr>
+    <tr>
+        <th align="center">P1</th><th align="center">P2</th><th align="center">E</th>
+        <th align="center">P1</th><th align="center">P2</th><th align="center">E</th>
+        <th align="center">P1</th><th align="center">P2</th><th align="center">E</th>
+        <th align="center">P1</th><th align="center">P2</th><th align="center">E</th>
+        <th align="center">P1</th><th align="center">P2</th><th align="center">E</th>
+        <th align="center">P1</th><th align="center">P2</th><th align="center">E</th>
+        <th align="center">P1</th><th align="center">P2</th><th align="center">E</th>
+        <th align="center">P1</th><th align="center">P2</th><th align="center">E</th>
+        <th align="center">P1</th><th align="center">P2</th><th align="center">E</th>
+        <th align="center">P1</th><th align="center">P2</th><th align="center">E</th>
+    </tr>
+    <tr>
+        <td align="center">01</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#FFA500">5</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#98FB98">2</td>
+        <td align="center">s</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+    </tr>
+    <tr>
+        <td align="center">02</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#98FB98">2</td>
+        <td align="center">s</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+    </tr>
+    <tr>
+        <td align="center">03</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#FFA07A">4</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#98FB98">2</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+    </tr>
+    <tr>
+        <td align="center">04</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#98FB98">2</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#98FB98">2</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center">l,s</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center">l</td>
+    </tr>
+    <tr>
+        <td align="center">05</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#FFE4B5">3</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
+    </tr>
+    <tr>
+        <td align="center">06</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#FFE4B5">3</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#98FB98">2</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#98FB98">2</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center">l</td>
+    </tr>
+    <tr>
+        <td align="center">07</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#FFE4B5">3</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
+    </tr>
+    <tr>
+        <td align="center">08</td>
+        <td align="center" bgcolor="#98FB98">2</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#98FB98">2</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#98FB98">2</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l,s</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l,s</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
+    </tr>
+</table>
 
 ### Data analytics
 

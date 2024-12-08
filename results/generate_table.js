@@ -1,128 +1,145 @@
 const fs = require('fs');
 
-// Function to generate the HTML table from data.json
-function generateTable() {
-    try {
-        // Read and parse the data.json file
-        const data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
+function calculateModelScores(data) {
+    const scores = {};
+    const totalDays = data.days.length;
 
-        // Start building the HTML
-        let html = `
-<style>
-table {
-    border-collapse: collapse;
-    font-family: Arial, sans-serif;
-    font-size: 14px;
-    margin: 20px 0;
-    width: max-content;
-}
+    data.models.forEach(model => {
+        let successfulPart1 = 0;
+        let successfulPart2 = 0;
+        let totalAttemptsPart1 = 0;
+        let totalAttemptsPart2 = 0;
+        let attemptedPart1 = 0;
+        let attemptedPart2 = 0;
 
-th, td {
-    border: 1px solid #666;
-    padding: 2px 4px;
-    text-align: center;
-}
-
-th {
-    background-color: #4472C4;
-    color: white;
-}
-
-/* Top header row cells (model names) */
-tr:first-child th {
-    padding: 4px 8px;
-}
-
-/* Second header row cells (P1, P2, E) */
-tr:nth-child(2) th {
-    width: 30px;
-    padding: 2px;
-}
-
-/* First column (Day) */
-td:first-child, th:first-child {
-    width: 30px;
-}
-
-/* Data cells width */
-td {
-    width: 30px;
-}
-
-/* Value colors */
-.v1 { background-color: #90EE90; }  /* Light green */
-.v2 { background-color: #98FB98; }  /* Pale green */
-.v3 { background-color: #FFE4B5; }  /* Light orange */
-.v4 { background-color: #FFA07A; }  /* Light salmon */
-.v5 { background-color: #FFA500; }  /* Orange */
-.vx { background-color: #FFB6C6; }  /* Light red */
-</style>
-
-<table>
-    <tr>
-        <th rowspan="2">Day</th>`;
-
-        // Add model headers
-        data.models.forEach(model => {
-            html += `
-        <th colspan="3">${model}</th>`;
+        data.days.forEach(day => {
+            const result = day.results[model];
+            
+            if (result.part1 !== 'X') {
+                successfulPart1++;
+                totalAttemptsPart1 += parseInt(result.part1);
+                attemptedPart1++;
+            }
+            
+            if (result.part2 !== 'X' && result.part2 !== '-') {
+                successfulPart2++;
+                totalAttemptsPart2 += parseInt(result.part2);
+                attemptedPart2++;
+            }
         });
 
-        // Add subheaders
-        html += `
+        const successRate = ((successfulPart1 + successfulPart2) / (2 * totalDays)) * 100;
+        const efficiencyRate = (
+            (attemptedPart1 > 0 ? attemptedPart1 / totalAttemptsPart1 : 0) +
+            (attemptedPart2 > 0 ? attemptedPart2 / totalAttemptsPart2 : 0)
+        ) * 50;
+        const finalScore = (0.7 * successRate) + (0.3 * efficiencyRate);
+
+        scores[model] = {
+            successRate,
+            efficiencyRate,
+            finalScore
+        };
+    });
+
+    return scores;
+}
+
+function getCellColor(value) {
+    switch(value) {
+        case '1': return '#90EE90';  // Light green
+        case '2': return '#98FB98';  // Pale green
+        case '3': return '#FFE4B5';  // Light orange
+        case '4': return '#FFA07A';  // Light salmon
+        case '5': return '#FFA500';  // Orange
+        case 'X':
+        case '-': return '#FFB6C6';  // Light red
+        default: return '#FFFFFF';    // White
+    }
+}
+
+function generateTables() {
+    try {
+        const data = JSON.parse(fs.readFileSync('data.json', 'utf8'));
+        const scores = calculateModelScores(data);
+        const sortedModels = [...data.models].sort((a, b) => 
+            scores[b].finalScore - scores[a].finalScore
+        );
+
+        // Generate rankings table
+        let rankingsHtml = `<table>
+    <tr>
+        <th align="center">Rank</th>
+        <th align="center">Model</th>
+        <th align="center">Success Rate</th>
+        <th align="center">Efficiency Rate</th>
+        <th align="center">Final Score</th>
+    </tr>\n`;
+
+        sortedModels.forEach((model, index) => {
+            const score = scores[model];
+            rankingsHtml += `    <tr>
+        <td align="center">${index + 1}</td>
+        <td align="center">${model}</td>
+        <td align="center">${score.successRate.toFixed(1)}%</td>
+        <td align="center">${score.efficiencyRate.toFixed(1)}%</td>
+        <td align="center">${score.finalScore.toFixed(1)}</td>
+    </tr>\n`;
+        });
+
+        rankingsHtml += '</table>\n';
+        fs.writeFileSync('rankings.html', rankingsHtml);
+
+        // Generate results table
+        let resultsHtml = `<table>
+    <tr>
+        <th align="center" rowspan="2">Day</th>`;
+
+        sortedModels.forEach(model => {
+            resultsHtml += `
+        <th align="center" colspan="3">${model}</th>`;
+        });
+
+        resultsHtml += `
     </tr>
     <tr>`;
-        data.models.forEach(() => {
-            html += `
-        <th>P1</th><th>P2</th><th>E</th>`;
+        
+        sortedModels.forEach(() => {
+            resultsHtml += `
+        <th align="center">P1</th><th align="center">P2</th><th align="center">E</th>`;
         });
-        html += `
-    </tr>`;
+        
+        resultsHtml += `
+    </tr>\n`;
 
-        // Add data rows
         data.days.forEach(day => {
-            html += `
-    <tr>
-        <td>${day.day}</td>`;
-            data.models.forEach(model => {
+            resultsHtml += `    <tr>
+        <td align="center">${day.day}</td>`;
+            sortedModels.forEach(model => {
                 const result = day.results[model];
-                const p1Class = getCellClass(result.part1);
-                const p2Class = getCellClass(result.part2);
+                const p1Color = getCellColor(result.part1);
+                const p2Color = getCellColor(result.part2);
                 const errors = result.errors ? result.errors.join(',') : '';
                 
-                html += `
-        <td class="${p1Class}">${result.part1}</td>
-        <td class="${p2Class}">${result.part2}</td>
-        <td>${errors}</td>`;
+                resultsHtml += `
+        <td align="center" bgcolor="${p1Color}">${result.part1}</td>
+        <td align="center" bgcolor="${p2Color}">${result.part2}</td>
+        <td align="center">${errors}</td>`;
             });
-            html += `
-    </tr>`;
+            resultsHtml += `
+    </tr>\n`;
         });
 
-        html += `
-</table>`;
-
-        // Write to results.html
-        fs.writeFileSync('results.html', html);
-        console.log('Generated results.html');
+        resultsHtml += '</table>';
+        fs.writeFileSync('results.html', resultsHtml);
+        
+        console.log('Generated:');
+        console.log('- rankings.html');
+        console.log('- results.html');
         
     } catch (error) {
-        console.error('Error generating table:', error);
+        console.error('Error generating tables:', error);
     }
 }
 
-function getCellClass(value) {
-    switch(value) {
-        case '1': return 'v1';
-        case '2': return 'v2';
-        case '3': return 'v3';
-        case '4': return 'v4';
-        case '5': return 'v5';
-        case 'X':
-        case '-': return 'vx';
-        default: return '';
-    }
-}
-
-// Run the generation
-generateTable();
+generateTables();
