@@ -1,0 +1,136 @@
+{
+    "models": [
+        "Claude 3.5 Sonnet",
+        "MS Copilot",
+        "GPT 4o",
+        "o1-mini",
+        "o1-preview",
+        "o1",
+        "Qwen2.5-72b",
+        "Qwen2.5-Coder-32b",
+        "Qwen-QwQ",
+        "R1-Lite"
+    ],
+    "days": [
+        {
+            "day": "01",
+            "results": {
+                "Claude 3.5 Sonnet": {"part1": "1", "part2": "1"},
+                "MS Copilot": {"part1": "1", "part2": "1"},
+                "GPT 4o": {"part1": "1", "part2": "1"},
+                "o1-mini": {"part1": "1", "part2": "1"},
+                "o1-preview": {"part1": "1", "part2": "1"},
+                "o1": {"part1": "1", "part2": "1"},
+                "Qwen2.5-72b": {"part1": "1", "part2": "2", "errors": ["s"]},
+                "Qwen2.5-Coder-32b": {"part1": "1", "part2": "1"},
+                "Qwen-QwQ": {"part1": "5", "part2": "1", "errors": ["l"]},
+                "R1-Lite": {"part1": "1", "part2": "1"}
+            }
+        },
+        {
+            "day": "02",
+            "results": {
+                "Claude 3.5 Sonnet": {"part1": "1", "part2": "1"},
+                "MS Copilot": {"part1": "1", "part2": "1"},
+                "GPT 4o": {"part1": "1", "part2": "1"},
+                "o1-mini": {"part1": "1", "part2": "1"},
+                "o1-preview": {"part1": "1", "part2": "1"},
+                "o1": {"part1": "1", "part2": "1"},
+                "Qwen2.5-72b": {"part1": "1", "part2": "2", "errors": ["s"]},
+                "Qwen2.5-Coder-32b": {"part1": "1", "part2": "1"},
+                "Qwen-QwQ": {"part1": "1", "part2": "1"},
+                "R1-Lite": {"part1": "1", "part2": "1"}
+            }
+        },
+        {
+            "day": "03",
+            "results": {
+                "Claude 3.5 Sonnet": {"part1": "1", "part2": "1"},
+                "MS Copilot": {"part1": "1", "part2": "1"},
+                "GPT 4o": {"part1": "1", "part2": "4", "errors": ["l"]},
+                "o1-mini": {"part1": "1", "part2": "1"},
+                "o1-preview": {"part1": "1", "part2": "1"},
+                "o1": {"part1": "1", "part2": "1"},
+                "Qwen2.5-72b": {"part1": "1", "part2": "2", "errors": ["l"]},
+                "Qwen2.5-Coder-32b": {"part1": "1", "part2": "1"},
+                "Qwen-QwQ": {"part1": "1", "part2": "1"},
+                "R1-Lite": {"part1": "1", "part2": "1"}
+            }
+        },
+        {
+            "day": "04",
+            "results": {
+                "Claude 3.5 Sonnet": {"part1": "1", "part2": "2", "errors": ["l"]},
+                "MS Copilot": {"part1": "1", "part2": "X", "errors": ["l"]},
+                "GPT 4o": {"part1": "1", "part2": "X", "errors": ["l"]},
+                "o1-mini": {"part1": "1", "part2": "2", "errors": ["l"]},
+                "o1-preview": {"part1": "1", "part2": "1"},
+                "o1": {"part1": "1", "part2": "1"},
+                "Qwen2.5-72b": {"part1": "1", "part2": "X", "errors": ["l"]},
+                "Qwen2.5-Coder-32b": {"part1": "1", "part2": "X", "errors": ["l"]},
+                "Qwen-QwQ": {"part1": "1", "part2": "X", "errors": ["l", "s"]},
+                "R1-Lite": {"part1": "1", "part2": "1"}
+            }
+        },
+        {
+            "day": "05",
+            "results": {
+                "Claude 3.5 Sonnet": {"part1": "1", "part2": "1"},
+                "MS Copilot": {"part1": "1", "part2": "1"},
+                "GPT 4o": {"part1": "3", "part2": "1", "errors": ["l"]},
+                "o1-mini": {"part1": "1", "part2": "1"},
+                "o1-preview": {"part1": "1", "part2": "1"},
+                "o1": {"part1": "1", "part2": "1"},
+                "Qwen2.5-72b": {"part1": "1", "part2": "1"},
+                "Qwen2.5-Coder-32b": {"part1": "X", "part2": "-", "errors": ["l"]},
+                "Qwen-QwQ": {"part1": "1", "part2": "1"},
+                "R1-Lite": {"part1": "1", "part2": "1"}
+            }
+        },
+        {
+            "day": "06",
+            "results": {
+                "Claude 3.5 Sonnet": {"part1": "2", "part2": "1", "errors": ["l"]},
+                "MS Copilot": {"part1": "X", "part2": "-", "errors": ["l"]},
+                "GPT 4o": {"part1": "X", "part2": "-", "errors": ["l"]},
+                "o1-mini": {"part1": "1", "part2": "1"},
+                "o1-preview": {"part1": "1", "part2": "1"},
+                "o1": {"part1": "3", "part2": "1", "errors": ["l"]},
+                "Qwen2.5-72b": {"part1": "1", "part2": "X", "errors": ["l"]},
+                "Qwen2.5-Coder-32b": {"part1": "2", "part2": "X", "errors": ["l"]},
+                "Qwen-QwQ": {"part1": "1", "part2": "X", "errors": ["l"]},
+                "R1-Lite": {"part1": "1", "part2": "1"}
+            }
+        },
+        {
+            "day": "07",
+            "results": {
+                "Claude 3.5 Sonnet": {"part1": "1", "part2": "3", "errors": ["l"]},
+                "MS Copilot": {"part1": "X", "part2": "-", "errors": ["l"]},
+                "GPT 4o": {"part1": "1", "part2": "1"},
+                "o1-mini": {"part1": "1", "part2": "1"},
+                "o1-preview": {"part1": "1", "part2": "1"},
+                "o1": {"part1": "1", "part2": "1"},
+                "Qwen2.5-72b": {"part1": "X", "part2": "-", "errors": ["l"]},
+                "Qwen2.5-Coder-32b": {"part1": "X", "part2": "-", "errors": ["l"]},
+                "Qwen-QwQ": {"part1": "1", "part2": "1"},
+                "R1-Lite": {"part1": "1", "part2": "1"}
+            }
+        },
+        {
+            "day": "08",
+            "results": {
+                "Claude 3.5 Sonnet": {"part1": "X", "part2": "-", "errors": ["l"]},
+                "MS Copilot": {"part1": "X", "part2": "-", "errors": ["l", "s"]},
+                "GPT 4o": {"part1": "X", "part2": "-", "errors": ["l"]},
+                "o1-mini": {"part1": "1", "part2": "2", "errors": ["l"]},
+                "o1-preview": {"part1": "2", "part2": "1", "errors": ["l"]},
+                "o1": {"part1": "1", "part2": "1"},
+                "Qwen2.5-72b": {"part1": "X", "part2": "-", "errors": ["l"]},
+                "Qwen2.5-Coder-32b": {"part1": "X", "part2": "-", "errors": ["l"]},
+                "Qwen-QwQ": {"part1": "X", "part2": "-", "errors": ["l", "s"]},
+                "R1-Lite": {"part1": "1", "part2": "2", "errors": ["l"]}
+            }
+        }
+    ]
+}
