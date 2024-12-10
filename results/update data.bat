@@ -3,23 +3,31 @@ setlocal enabledelayedexpansion
 
 echo Starting execution sequence...
 
-:: Step 1: Run Node.js script
-echo Running generate_table.js...
-node generate_table.js
+:: Step 1: Try to activate either Conda environment
+echo Attempting to activate Conda environment...
+call conda activate AdventOfCode 2>nul
 if errorlevel 1 (
-    echo Error: Failed to execute generate_table.js
-    exit /b 1
+    echo AdventOfCode environment not found, trying AoC...
+    call conda activate AoC 2>nul
+    if errorlevel 1 (
+        echo Error: Failed to activate either AdventOfCode or AoC environment
+        echo Available environments:
+        conda env list
+        exit /b 1
+    )
+    echo Successfully activated AoC environment.
+) else (
+    echo Successfully activated AdventOfCode environment.
 )
-echo Node.js script completed successfully.
 
-:: Step 2: Activate Conda environment
-echo Activating Conda environment "AdventOfCode"...
-call conda activate AdventOfCode
+:: Step 2: Run Python script for table generation
+echo Running generate_tables.py...
+python generate_tables.py
 if errorlevel 1 (
-    echo Error: Failed to activate Conda environment "AdventOfCode"
+    echo Error: Failed to execute generate_tables.py
     exit /b 1
 )
-echo Conda environment activated successfully.
+echo Table generation completed successfully.
 
 :: Step 3: Run first Python script
 echo Running update_readme.py...
