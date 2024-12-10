@@ -21,24 +21,27 @@ The models are rated on 0-shot prompting. If this does not work, they are being 
 * Qwen2.5-72b -> Qwen/Qwen2.5-72B-Instruct used on https://huggingface.co/chat
 * Qwen2.5-Coder-32b -> Qwen/Qwen2.5-Coder-32B-Instruct used on https://huggingface.co/chat
 * Qwen-QwQ -> Qwen/QwQ-32B-Preview used on https://huggingface.co/chat
-* R1-Lite -> DeepSeek-R1-Lite preview used on https://chat.deepseek.com/
-<!--
+* R1-Lite -> DeepSeek-R1-Lite preview used on https://chat.deepseek.com
+* Llama 3.3 -> meta-llama/Llama-3.3-70B-Instruct used on https://huggingface.co/chat
+* Gemini -> gemini-exp-1206 used in Direct Chat on https://lmarena.ai
+
 
 ## Overview
-| Day | Claude 3.5 Sonnet | MS Copilot | GPT 4o  | o1-mini | o1-preview | o1      | Qwen2.5-72b | Qwen2.5-Coder-32b | Qwen-QwQ  | R1-Lite |
-| --- | ---               | ---        | ---     | ---     | ---        | ---     | ---         | ---               | ---       | ---     |
-| 01  | 1/1               | 1/1        | 1/1     | 1/1     | 1/1        | 1/1     | 1/2 (s)     | 1/1               | 5/1 (l)   | 1/1     |
-| 02  | 1/1               | 1/1        | 1/1     | 1/1     | 1/1        | 1/1     | 1/2 (s)     | 1/1               | 1/1       | 1/1     |
-| 03  | 1/1               | 1/1        | 1/4 (l) | 1/1     | 1/1        | 1/1     | 1/2 (l)     | 1/1               | 1/1       | 1/1     |
-| 04  | 1/2 (l)           | 1/X (l)    | 1/X (l) | 1/2 (l) | 1/1        | 1/1     | 1/X (l)     | 1/X (l)           | 1/X (l,s) | 1/1     |
-| 05  | 1/1               | 1/1        | 3/1 (l) | 1/1     | 1/1        | 1/1     | 1/1         | X/- (l)           | 1/1       | 1/1     |
-| 06  | 2/1 (l)           | X/- (l)    | X/- (l) | 1/1     | 1/1        | 3/1 (l) | 1/X (l)     | 2/X (l)           | 1/X (l)   | 1/1     |
-| 07  | 1/3 (l)           | X/- (l)    | 1/1     | 1/1     | 1/1        | 1/1     | X/- (l)     | X/- (l)           | 1/1       | 1/1     |
-| 08  | X/- (l)           | X/- (l, s) | X/- (l) | 1/2 (l) | 2/1 (l)    | 1/1     | X/- (l)     | X/- (l)           | X/- (l,s) | 1/2 (l) |
-| 09  | 3/1 (l)           | X/- (l)    | X/- (l) | X/- (l) | 1/1        | 1/1     | X/- (l)     | X/- (l)           | X/- (l)   | 2/1 (l) |
-| XX  |                   |            |         |         |            |         |             |                   |           |         |
+| Day | Claude 3.5 | MS Copilot | GPT 4o  | o1-mini | o1-preview | o1      | Qwen2.5-72b | Qwen Coder | Qwen-QwQ  | R1-Lite | Llama 3.3 | Gemini  |
+| --- | ---        | ---        | ---     | ---     | ---        | ---     | ---         | ---        | ---       | ---     | ---       | ---     |
+| 01  | 1/1        | 1/1        | 1/1     | 1/1     | 1/1        | 1/1     | 1/2 (s)     | 1/1        | 5/1 (l)   | 1/1     |           |         |
+| 02  | 1/1        | 1/1        | 1/1     | 1/1     | 1/1        | 1/1     | 1/2 (s)     | 1/1        | 1/1       | 1/1     |           |         |
+| 03  | 1/1        | 1/1        | 1/4 (l) | 1/1     | 1/1        | 1/1     | 1/2 (l)     | 1/1        | 1/1       | 1/1     |           |         |
+| 04  | 1/2 (l)    | 1/X (l)    | 1/X (l) | 1/2 (l) | 1/1        | 1/1     | 1/X (l)     | 1/X (l)    | 1/X (l,s) | 1/1     |           | 1/X (l) |
+| 05  | 1/1        | 1/1        | 3/1 (l) | 1/1     | 1/1        | 1/1     | 1/1         | X/- (l)    | 1/1       | 1/1     |           |         |
+| 06  | 2/1 (l)    | X/- (l)    | X/- (l) | 1/1     | 1/1        | 3/1 (l) | 1/X (l)     | 2/X (l)    | 1/X (l)   | 1/1     |           |         |
+| 07  | 1/3 (l)    | X/- (l)    | 1/1     | 1/1     | 1/1        | 1/1     | X/- (l)     | X/- (l)    | 1/1       | 1/1     |           |         |
+| 08  | X/- (l)    | X/- (l, s) | X/- (l) | 1/2 (l) | 2/1 (l)    | 1/1     | X/- (l)     | X/- (l)    | X/- (l,s) | 1/2 (l) |           |         |
+| 09  | 3/1 (l)    | X/- (l)    | X/- (l) | X/- (l) | 1/1        | 1/1     | X/- (l)     | X/- (l)    | X/- (l)   | 2/1 (l) |           |         |
+| 10  | 1/3 (l)    |            | 1/1     | 1/1     | 1/1        |         | 1/5 (l)     | X/- (l)    | 1/2 (l)   | 2/1 (l) | 3/1 (l)   | 1/1     |
+| XX  |            |            |         |         |            |         |             |            |           |         |           |         |
 
--->
+
 
 ## Results
 

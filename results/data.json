@@ -9,7 +9,9 @@
         "Qwen2.5-72b",
         "Qwen2.5-Coder-32b",
         "Qwen-QwQ",
-        "R1-Lite"
+        "R1-Lite",
+        "Llama 3.3",
+        "Gemini"
     ],
     "days": [
         {
@@ -69,7 +71,8 @@
                 "Qwen2.5-72b": {"part1": "1", "part2": "X", "errors": ["l"]},
                 "Qwen2.5-Coder-32b": {"part1": "1", "part2": "X", "errors": ["l"]},
                 "Qwen-QwQ": {"part1": "1", "part2": "X", "errors": ["l", "s"]},
-                "R1-Lite": {"part1": "1", "part2": "1"}
+                "R1-Lite": {"part1": "1", "part2": "1"},
+                "Gemini": {"part1": "1", "part2": "X", "errors": ["l"]}
             }
         },
         {
@@ -145,6 +148,23 @@
                 "Qwen2.5-Coder-32b": {"part1": "X", "part2": "-", "errors": ["l"]},
                 "Qwen-QwQ": {"part1": "X", "part2": "-", "errors": ["l"]},
                 "R1-Lite": {"part1": "2", "part2": "1", "errors": ["l"]}
+            }
+        },
+        {
+            "day": "10",
+            "results": {
+                "Claude 3.5 Sonnet": {"part1": "1", "part2": "3", "errors": ["l"]},
+                "MS Copilot": {"part1": "", "part2": ""},
+                "GPT 4o": {"part1": "1", "part2": "1"},
+                "o1-mini": {"part1": "1", "part2": "1"},
+                "o1-preview": {"part1": "1", "part2": "1"},
+                "o1": {"part1": "", "part2": ""},
+                "Qwen2.5-72b": {"part1": "1", "part2": "5", "errors": ["l"]},
+                "Qwen2.5-Coder-32b": {"part1": "X", "part2": "-", "errors": ["l"]},
+                "Qwen-QwQ": {"part1": "1", "part2": "2", "errors": ["l"]},
+                "R1-Lite": {"part1": "2", "part2": "1", "errors": ["l"]},
+                "Llama 3.3": {"part1": "3", "part2": "1", "errors": ["l"]},
+                "Gemini": {"part1": "1", "part2": "1"}
             }
         }
     ]
