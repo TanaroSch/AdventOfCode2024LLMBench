@@ -42,6 +42,7 @@ The models are rated on 0-shot prompting. If this does not work, they are being 
 | 09  | 3/1 (l)    | X/- (l)    | X/- (l) | X/- (l) | 1/1        | 1/1     | X/- (l)     | X/- (l)    | X/- (l)   | 2/1 (l) |           |         |
 | 10  | 1/3 (l)    | 2/1 (l)    | 1/1     | 1/1     | 1/1        | 1/1     | 1/5 (l)     | X/- (l)    | 1/2 (l)   | 2/1 (l) | 3/1 (l)   | 1/1     |
 | 11  | 1/X (l)    | 1/3 (l)    | 1/3 (l) | 1/1     | 2/1 (l)    | 1/3 (l) | 1/4 (l)     | 1/X (l)    | 1/X (l)   | 1/X (l) | 1/X (l)   | 1/X (l) |
+| 13  | 1/4 (l)    | 1/X (l)    | 2/X (l) | 1/1     | 1/2 (s)    |         |             |            | 3/  (l)   | 2/1 (l) | 5/X (l)   |         |
 | XX  |            |            |         |         |            |         |             |            |           |         |           |         |
 
 -->
@@ -648,4 +649,5 @@ The models are ranked using a composite score:
 * Qwen QwQ sometimes only provided the full code solution in the thought process, not in the final output. In these cases I still used the last code provided in the thought process.
 * On day 08 o1-mini and R1-Lite produced a similar solution for Part 2 in their first try with the same wrong answer. 
 * On day 09 o1's solution was 0-shot but took 1m30s, R1-Lite took one follow-up prompt but resulted in a solution that takes less than 1s.
+* On day 13 o1-preview even though explicitly asked about the python code, initially returned a step by step instruction on how to achieve the solution for part 2 but not the python code. Since I had to ask about the full implementatoin manually I counted this as a second try and marked it as syntax issue.
 * 
