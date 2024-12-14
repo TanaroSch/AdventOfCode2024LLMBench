@@ -21,13 +21,13 @@ if errorlevel 1 (
 )
 
 :: Step 2: Run Python script for table generation
-echo Running generate_tables.py...
-python generate_tables.py
+echo Running visualize_results.py...
+python visualize_results.py
 if errorlevel 1 (
-    echo Error: Failed to execute generate_tables.py
+    echo Error: Failed to execute visualize_results.py
     exit /b 1
 )
-echo Table generation completed successfully.
+echo visualize_results.py completed successfully.
 
 :: Step 3: Run first Python script
 echo Running update_readme.py...
@@ -37,15 +37,6 @@ if errorlevel 1 (
     exit /b 1
 )
 echo update_readme.py completed successfully.
-
-:: Step 4: Run second Python script
-echo Running visualize_results.py...
-python visualize_results.py
-if errorlevel 1 (
-    echo Error: Failed to execute visualize_results.py
-    exit /b 1
-)
-echo visualize_results.py completed successfully.
 
 echo All operations completed successfully!
 pause
