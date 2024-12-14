@@ -26,7 +26,9 @@
         "Qwen2.5-72b": { "part1": "1", "part2": "2", "errors": ["s"] },
         "Qwen2.5-Coder-32b": { "part1": "1", "part2": "1" },
         "Qwen-QwQ": { "part1": "5", "part2": "1", "errors": ["l"] },
-        "R1-Lite": { "part1": "1", "part2": "1" }
+        "R1-Lite": { "part1": "1", "part2": "1" },
+        "Llama 3.3": { "part1": "1", "part2": "1" },
+        "Gemini": { "part1": "1", "part2": "1" }
       }
     },
     {
@@ -41,7 +43,9 @@
         "Qwen2.5-72b": { "part1": "1", "part2": "2", "errors": ["s"] },
         "Qwen2.5-Coder-32b": { "part1": "1", "part2": "1" },
         "Qwen-QwQ": { "part1": "1", "part2": "1" },
-        "R1-Lite": { "part1": "1", "part2": "1" }
+        "R1-Lite": { "part1": "1", "part2": "1" },
+        "Llama 3.3": { "part1": "1", "part2": "1" },
+        "Gemini": { "part1": "1", "part2": "1" }
       }
     },
     {
@@ -56,7 +60,9 @@
         "Qwen2.5-72b": { "part1": "1", "part2": "2", "errors": ["l"] },
         "Qwen2.5-Coder-32b": { "part1": "1", "part2": "1" },
         "Qwen-QwQ": { "part1": "1", "part2": "1" },
-        "R1-Lite": { "part1": "1", "part2": "1" }
+        "R1-Lite": { "part1": "1", "part2": "1" },
+        "Llama 3.3": { "part1": "1", "part2": "5", "errors": ["l"] },
+        "Gemini": { "part1": "1", "part2": "1" }
       }
     },
     {
@@ -72,6 +78,7 @@
         "Qwen2.5-Coder-32b": { "part1": "1", "part2": "X", "errors": ["l"] },
         "Qwen-QwQ": { "part1": "1", "part2": "X", "errors": ["l", "s"] },
         "R1-Lite": { "part1": "1", "part2": "1" },
+        "Llama 3.3": { "part1": "1", "part2": "X", "errors": ["l"] },
         "Gemini": { "part1": "1", "part2": "X", "errors": ["l"] }
       }
     },
@@ -87,7 +94,9 @@
         "Qwen2.5-72b": { "part1": "1", "part2": "1" },
         "Qwen2.5-Coder-32b": { "part1": "X", "part2": "-", "errors": ["l"] },
         "Qwen-QwQ": { "part1": "1", "part2": "1" },
-        "R1-Lite": { "part1": "1", "part2": "1" }
+        "R1-Lite": { "part1": "1", "part2": "1" },
+        "Llama 3.3": { "part1": "1", "part2": "1" },
+        "Gemini": { "part1": "3", "part2": "1", "errors": ["l"] }
       }
     },
     {
