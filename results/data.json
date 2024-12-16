@@ -245,7 +245,37 @@
         "Qwen-QwQ": { "part1": "1", "part2": "X", "errors": ["l"] },
         "R1-Lite": { "part1": "1", "part2": "X", "errors": ["l"] },
         "Llama 3.3": { "part1": "4", "part2": "X", "errors": ["l"] },
-        "Gemini": { "part1": "1", "part2": "x", "errors": ["l"] }
+        "Gemini": { "part1": "1", "part2": "X", "errors": ["l"] }
+      }
+    },
+    {
+      "day": "15",
+      "results": {
+        "Claude 3.5 Sonnet": { "part1": "X", "part2": "-", "errors": ["l"] },
+        "MS Copilot": { "part1": "X", "part2": "-", "errors": ["l"] },
+        "o1-mini": { "part1": "X", "part2": "-", "errors": ["l"] },
+        "o1-preview": { "part1": "X", "part2": "-", "errors": ["l"] },
+        "o1": { "part1": "1", "part2": "X", "errors": ["l"] },
+        "Qwen-QwQ": { "part1": "X", "part2": "-", "errors": ["l", "s"] },
+        "R1-Lite": { "part1": "1", "part2": "X", "errors": ["l"] },
+        "Text-davinci-003": { "part1": "X", "part2": "-", "errors": ["l"] }
+      }
+    },
+    {
+      "day": "16",
+      "results": {
+        "Claude 3.5 Sonnet": { "part1": "1", "part2": "1" },
+        "MS Copilot": { "part1": "4", "part2": "X", "errors": ["l"] },
+        "GPT 4o": { "part1": "1", "part2": "X", "errors": ["l"] },
+        "o1-mini": { "part1": "1", "part2": "5", "errors": ["l"] },
+        "o1-preview": { "part1": "1", "part2": "1" },
+        "o1": { "part1": "1", "part2": "1" },
+        "Qwen2.5-72b": { "part1": "X", "part2": "-", "errors": ["l"] },
+        "Qwen2.5-Coder-32b": { "part1": "X", "part2": "-", "errors": ["l"] },
+        "Qwen-QwQ": { "part1": "X", "part2": "-", "errors": ["l", "s"] },
+        "R1-Lite": { "part1": "1", "part2": "X", "errors": ["l"] },
+        "Llama 3.3": { "part1": "3", "part2": "X", "errors": ["l"] },
+        "Gemini": { "part1": "1", "part2": "X", "errors": ["l"] }
       }
     }
   ]
