@@ -9,7 +9,173 @@ Please solve the following problem using Python, assuming that the provided inpu
 ```
 This prompt is followed by the copied problem description of this day's exercise.
 
-The models are rated on 0-shot prompting. If this does not work, they are being prompted with the information that AoC provides, whether the result is too high or too low and have a chance of fixing their solution up to four times to a total of five tries. If they don't manage to provide a working solution within 5 tries, this day is marked as failed (X), if this happens in the first part, the second part is marked with (-). Otherwise, the number of tries is noted. The reason why the solution is wrong is noted following the tries with (l) for logic and (s) for syntax errors.
+The models are rated on 0-shot prompting. If this does not work, they are being prompted with the information that AoC provides, whether the result is too high or too low and have a chance of fixing their solution up to four times to a total of five tries. If they don't manage to provide a working solution within 5 tries, this day is marked as failed (X), if this happens in the first part, the second part is marked with (-). Otherwise, the number of tries is noted. The reason why the solu{
+       "day": "12",
+       "results": {
+           "Claude 3.5 Sonnet": {"part1": "2", "part2": "X", "errors": ["l"]},
+           "MS Copilot": {"part1": "2", "part2": "X", "errors": ["s"]},
+           "GPT 4o": {"part1": "X", "part2": "-", "errors": ["l"]},
+           "o1-mini": {"part1": "2", "part2": "X", "errors": ["l"]},
+           "o1-preview": {"part1": "1", "part2": "X", "errors": ["l"]},
+           "o1": {"part1": "1", "part2": "X", "errors": ["l"]},
+           "Qwen2.5-72b": {"part1": "X", "part2": "-", "errors": ["l", "s"]},
+           "Qwen2.5-Coder-32b": {"part1": "1", "part2": "X", "errors": ["l", "s"]},
+           "Qwen-QwQ": {"part1": "2", "part2": "X", "errors": ["l", "s"]},
+           "R1-Lite": {"part1": "1", "part2": "5", "errors": ["l"]},
+           "Llama 3.3": {"part1": "1", "part2": "X", "errors": ["l"]},
+           "Gemini": {"part1": "1", "part2": "X", "errors": ["l"]}
+       }
+   },
+   {
+       "day": "13",
+       "results": {
+           "Claude 3.5 Sonnet": {"part1": "1", "part2": "4", "errors": ["l"]},
+           "MS Copilot": {"part1": "1", "part2": "X", "errors": ["l"]},
+           "GPT 4o": {"part1": "2", "part2": "X", "errors": ["l"]},
+           "o1-mini": {"part1": "1", "part2": "1"},
+           "o1-preview": {"part1": "1", "part2": "2", "errors": ["s"]},
+           "o1": {"part1": "1", "part2": "1"},
+           "Qwen2.5-72b": {"part1": "2", "part2": "X", "errors": ["l"]},
+           "Qwen2.5-Coder-32b": {"part1": "X", "part2": "-", "errors": ["l"]},
+           "Qwen-QwQ": {"part1": "3", "part2": "X", "errors": ["l"]},
+           "R1-Lite": {"part1": "2", "part2": "1", "errors": ["l"]},
+           "Llama 3.3": {"part1": "5", "part2": "X", "errors": ["l"]},
+           "Gemini": {"part1": "X", "part2": "-", "errors": ["l"]}
+       }
+   },
+   {
+       "day": "14",
+       "results": {
+           "Claude 3.5 Sonnet": {"part1": "1", "part2": "X", "errors": ["l"]},
+           "MS Copilot": {"part1": "1", "part2": "1"},
+           "GPT 4o": {"part1": "1", "part2": "2", "errors": ["l"]},
+           "o1-mini": {"part1": "1", "part2": "X", "errors": ["l"]},
+           "o1-preview": {"part1": "1", "part2": "X", "errors": ["l"]},
+           "o1": {"part1": "1", "part2": "X", "errors": ["l"]},
+           "Qwen2.5-72b": {"part1": "X", "part2": "-", "errors": ["l"]},
+           "Qwen2.5-Coder-32b": {"part1": "1", "part2": "X", "errors": ["l"]},
+           "Qwen-QwQ": {"part1": "1", "part2": "X", "errors": ["l"]},
+           "R1-Lite": {"part1": "1", "part2": "X", "errors": ["l"]},
+           "Llama 3.3": {"part1": "4", "part2": "X", "errors": ["l"]},
+           "Gemini": {"part1": "1", "part2": "x", "errors": ["l"]}
+       }
+   },
+   {
+       "day": "15",
+       "results": {
+           "Claude 3.5 Sonnet": {"part1": "X", "part2": "-", "errors": ["l"]},
+           "MS Copilot": {"part1": "X", "part2": "-", "errors": ["l"]},
+           "GPT 4o": {"part1": "X", "part2": "-", "errors": ["l"]},
+           "o1-mini": {"part1": "X", "part2": "-", "errors": ["l"]},
+           "o1-preview": {"part1": "X", "part2": "-", "errors": ["l"]},
+           "o1": {"part1": "1", "part2": "X", "errors": ["l"]},
+           "Qwen2.5-72b": {"part1": "X", "part2": "-", "errors": ["l", "s"]},
+           "Qwen2.5-Coder-32b": {"part1": "X", "part2": "-", "errors": ["l"]},
+           "Qwen-QwQ": {"part1": "X", "part2": "-", "errors": ["l", "s"]},
+           "R1-Lite": {"part1": "1", "part2": "X", "errors": ["l"]},
+           "Llama 3.3": {"part1": "X", "part2": "-", "errors": ["l"]},
+           "Gemini": {"part1": "X", "part2": "-", "errors": ["l"]},
+           "Text-davinci-003": {"part1": "X", "part2": "-", "errors": ["l"]}
+       }
+   },
+   {
+       "day": "16",
+       "results": {
+           "Claude 3.5 Sonnet": {"part1": "1", "part2": "1"},
+           "MS Copilot": {"part1": "4", "part2": "X", "errors": ["l"]},
+           "GPT 4o": {"part1": "1", "part2": "X", "errors": ["l"]},
+           "o1-mini": {"part1": "1", "part2": "5", "errors": ["l"]},
+           "o1-preview": {"part1": "1", "part2": "1"},
+           "o1": {"part1": "1", "part2": "1"},
+           "Qwen2.5-72b": {"part1": "X", "part2": "-", "errors": ["l"]},
+           "Qwen2.5-Coder-32b": {"part1": "X", "part2": "-", "errors": ["l"]},
+           "Qwen-QwQ": {"part1": "X", "part2": "-", "errors": ["l", "s"]},
+           "R1-Lite": {"part1": "1", "part2": "X", "errors": ["l"]},
+           "Llama 3.3": {"part1": "3", "part2": "X", "errors": ["l"]},
+           "Gemini": {"part1": "1", "part2": "X", "errors": ["l"]}
+       }
+   },
+   {
+       "day": "17",
+       "results": {
+           "Claude 3.5 Sonnet": {"part1": "1", "part2": "X", "errors": ["l"]},
+           "MS Copilot": {"part1": "X", "part2": "-", "errors": ["l"]},
+           "GPT 4o": {"part1": "X", "part2": "-", "errors": ["l"]},
+           "o1-mini": {"part1": "1", "part2": "X", "errors": ["l"]},
+           "o1-preview": {"part1": "1", "part2": "X", "errors": ["l"]},
+           "o1": {"part1": "2", "part2": "X", "errors": ["l"]},
+           "Qwen2.5-72b": {"part1": "X", "part2": "-", "errors": ["l", "s"]},
+           "Qwen2.5-Coder-32b": {"part1": "X", "part2": "-", "errors": ["l"]},
+           "Qwen-QwQ": {"part1": "X", "part2": "-", "errors": ["l"]},
+           "R1-Lite": {"part1": "5", "part2": "X", "errors": ["l"]},
+           "Llama 3.3": {"part1": "3", "part2": "X", "errors": ["l"]},
+           "Gemini": {"part1": "1", "part2": "X", "errors": ["l"]},
+           "Text-davinci-003": {"part1": "X", "part2": "-", "errors": ["l"]}
+       }
+   },
+   {
+       "day": "18",
+       "results": {
+           "Claude 3.5 Sonnet": {"part1": "1", "part2": "1"},
+           "MS Copilot": {"part1": "1", "part2": "1"},
+           "GPT 4o": {"part1": "5", "part2": "1", "errors": ["l"]},
+           "o1": {"part1": "1", "part2": "1"},
+           "Qwen-QwQ": {"part1": "1", "part2": "2", "errors": ["l"]},
+           "R1-Lite": {"part1": "1", "part2": "1"}
+       }
+   },
+   {
+       "day": "19",
+       "results": {
+           "Claude 3.5 Sonnet": {"part1": "1", "part2": "1"},
+           "MS Copilot": {"part1": "1", "part2": "1"},
+           "GPT 4o": {"part1": "1", "part2": "1"},
+           "o1-mini": {"part1": "1", "part2": "1"},
+           "o1-preview": {"part1": "1", "part2": "1"},
+           "o1": {"part1": "1", "part2": "1"},
+           "Qwen2.5-72b": {"part1": "1", "part2": "3", "errors": ["l", "s"]},
+           "Qwen2.5-Coder-32b": {"part1": "1", "part2": "1"},
+           "Qwen-QwQ": {"part1": "4", "part2": "1", "errors": ["l"]},
+           "R1-Lite": {"part1": "1", "part2": "1"},
+           "Llama 3.3": {"part1": "3", "part2": "1", "errors": ["l"]},
+           "Gemini": {"part1": "1", "part2": "1"}
+       }
+   },
+   {
+       "day": "20",
+       "results": {
+           "Claude 3.5 Sonnet": {"part1": "2", "part2": "4", "errors": ["l"]},
+           "MS Copilot": {"part1": "X", "part2": "-", "errors": ["l"]},
+           "GPT 4o": {"part1": "X", "part2": "-", "errors": ["l"]},
+           "o1-mini": {"part1": "X", "part2": "-", "errors": ["l"]},
+           "o1-preview": {"part1": "1", "part2": "1"},
+           "o1": {"part1": "1", "part2": "1"},
+           "Qwen2.5-72b": {"part1": "X", "part2": "-", "errors": ["l", "s"]},
+           "Qwen2.5-Coder-32b": {"part1": "X", "part2": "-", "errors": ["l"]},
+           "Qwen-QwQ": {"part1": "X", "part2": "-", "errors": ["l"]},
+           "R1-Lite": {"part1": "5", "part2": "2", "errors": ["l"]},
+           "Llama 3.3": {"part1": "X", "part2": "-", "errors": ["l"]},
+           "Gemini": {"part1": "3", "part2": "X", "errors": ["l"]}
+       }
+   },
+   {
+       "day": "21",
+       "results": {
+           "Claude 3.5 Sonnet": {"part1": "X", "part2": "-", "errors": ["l"]},
+           "MS Copilot": {"part1": "X", "part2": "-", "errors": ["l"]},
+           "GPT 4o": {"part1": "X", "part2": "-", "errors": ["l"]},
+           "o1-mini": {"part1": "X", "part2": "-", "errors": ["l"]},
+           "o1-preview": {"part1": "X", "part2": "-", "errors": ["l"]},
+           "o1": {"part1": "X", "part2": "-", "errors": ["l"]},
+           "Qwen2.5-72b": {"part1": "X", "part2": "-", "errors": ["l", "s"]},
+           "Qwen2.5-Coder-32b": {"part1": "X", "part2": "-", "errors": ["l"]},
+           "Qwen-QwQ": {"part1": "X", "part2": "-", "errors": ["l"]},
+           "R1-Lite": {"part1": "X", "part2": "-", "errors": ["l"]},
+           "Llama 3.3": {"part1": "X", "part2": "-", "errors": ["l"]},
+           "Gemini": {"part1": "X", "part2": "-", "errors": ["l"]}
+       }
+   }
+]tion is wrong is noted following the tries with (l) for logic and (s) for syntax errors.
 
 ### Models:
 * Claude 3.5 Sonnet -> claude-3.5-sonnet-20241022 used on https://claude.ai 
@@ -30,7 +196,7 @@ The models are rated on 0-shot prompting. If this does not work, they are being 
 <!--
 
 ## Overview
-| Day | Claude 3.5 | MS Copilot | GPT 4o  | o1-mini | o1-preview | o1      | Qwen2.5-72b | Qwen Coder | Qwen-QwQ  | R1-Lite | Llama 3.3 | Gemini  | Phi     |
+| Day | Claude 3.5 | MS Copilot | GPT 4o  | o1-mini | o1-preview | o1      | Qwen2.5-72b | Qwen Coder | Qwen-QwQ  | R1-Lite | Llama 3.3 | Gemini  | Phi 4   |
 | --- | ---        | ---        | ---     | ---     | ---        | ---     | ---         | ---        | ---       | ---     | ---       | ---     | ---     |
 | 01  | 1/1        | 1/1        | 1/1     | 1/1     | 1/1        | 1/1     | 1/2 (s)     | 1/1        | 5/1 (l)   | 1/1     | 1/1       | 1/1     | 1/1     |
 | 02  | 1/1        | 1/1        | 1/1     | 1/1     | 1/1        | 1/1     | 1/2 (s)     | 1/1        | 1/1       | 1/1     | 1/1       | 1/1     | 1/1     |
@@ -43,56 +209,31 @@ The models are rated on 0-shot prompting. If this does not work, they are being 
 | 09  | 3/1 (l)    | X/- (l)    | X/- (l) | X/- (l) | 1/1        | 1/1     | X/- (l)     | X/- (l)    | X/- (l)   | 2/1 (l) |           |         |         |
 | 10  | 1/3 (l)    | 2/1 (l)    | 1/1     | 1/1     | 1/1        | 1/1     | 1/5 (l)     | X/- (l)    | 1/2 (l)   | 2/1 (l) | 3/1 (l)   | 1/1     |         |
 | 11  | 1/X (l)    | 1/3 (l)    | 1/3 (l) | 1/1     | 2/1 (l)    | 1/3 (l) | 1/4 (l)     | 1/X (l)    | 1/X (l)   | 1/X (l) | 1/X (l)   | 1/X (l) |         |
-| 12  | 2/X (l)    | 2/X (s)    | X/- (l) | 2/X (l) | 1/X (l)    | 1/X (l) | X/- (l,x)   | 1/X (l,s)  | 2/X (l,s) | 1/5 (l) | 1/X (l)   | 1/X (l) |         |
+| 12  | 2/X (l)    | 2/X (s)    | X/- (l) | 2/X (l) | 1/X (l)    | 1/X (l) | X/- (l,s)   | 1/X (l,s)  | 2/X (l,s) | 1/5 (l) | 1/X (l)   | 1/X (l) |         |
 | 13  | 1/4 (l)    | 1/X (l)    | 2/X (l) | 1/1     | 1/2 (s)    | 1/1     | 2/X (l)     | X/- (l)    | 3/X (l)   | 2/1 (l) | 5/X (l)   | X/- (l) |         |
 | 14  | 1/X (l)    | 1/1        | 1/2 (l) | 1/X (l) | 1/X (l)    | 1/X (l) | X/- (l)     | 1/X (l)    | 1/X (l)   | 1/X (l) | 4/X (l)   | 1/x (l) |         |
-| 15  | X/- (l)    | X/- (l)    |         | X/- (l) | X/- (l)    | 1/X (l) |             |            | X/- (l,s) | 1/X (l) |           |         | X/- (l) |
+| 15  | X/- (l)    | X/- (l)    | X/- (l) | X/- (l) | X/- (l)    | 1/X (l) | X/- (l,s)   | X/- (l)    | X/- (l,s) | 1/X (l) | X/- (l)   | X/- (l) | X/- (l) |
 | 16  | 1/1        | 4/X (l)    | 1/X (l) | 1/5 (l) | 1/1        | 1/1     | X/- (l)     | X/- (l)    | X/- (l,s) | 1/X (l) | 3/X (l)   | 1/X (l) |         |
+| 17  | 1/X (l)    | X/- (l)    | X/- (l) | 1/X (l) | 1/X (l)    | 2/X (l) | X/- (l,s)   | X/- (l)    | X/- (l)   | 5/X (l) | 3/X (l)   | 1/X (l) | X/- (l) |
+| 18  | 1/1        | 1/1        | 5/1 (l) |         |            | 1/1     |             |            | 1/2 (l)   | 1/1     |           |         |         |
+| 19  | 1/1        | 1/1        | 1/1     | 1/1     | 1/1        | 1/1     | 1/3 (l,s)   | 1/1        | 4/1 (l)   | 1/1     | 3/1 (l)   | 1/1     |         |
+| 20  | 2/4 (l)    | X/- (l)    | X/- (l) | X/- (l) | 1/1        | 1/1     | X/- (l,s)   | X/- (l)    | X/- (l)   | 5/2 (l) | X/- (l)   | 3/X (l) |         |
+| 21  | X/- (l)    | X/- (l)    | X/- (l) | X/- (l) | X/- (l)    | X/- (l) | X/- (l,s)   | X/- (l)    | X/- (l)   | X/- (l) | X/- (l)   | X/- (l) |         |
 | XX  |            |            |         |         |            |         |             |            |           |         |           |         |         |
+
+Results Day 21:
+34224 - too low!
+85734
+108234
+126384
+140008
+168140 - too low!
+198904 - too high!
+485212
 
 -->
 
 ## Results
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ### Model Rankings
@@ -112,86 +253,86 @@ The models are ranked using a composite score:
     <tr>
         <td align="center">1</td>
         <td align="center">o1</td>
-        <td align="center">90.6%</td>
-        <td align="center">87.8%</td>
-        <td align="center">89.8</td>
+        <td align="center">85.7%</td>
+        <td align="center">87.9%</td>
+        <td align="center">86.4</td>
     </tr>
     <tr>
         <td align="center">2</td>
         <td align="center">o1-preview</td>
-        <td align="center">87.5%</td>
-        <td align="center">90.5%</td>
-        <td align="center">88.4</td>
+        <td align="center">78.6%</td>
+        <td align="center">91.9%</td>
+        <td align="center">82.6</td>
     </tr>
     <tr>
         <td align="center">3</td>
         <td align="center">R1-Lite</td>
-        <td align="center">87.5%</td>
-        <td align="center">77.4%</td>
-        <td align="center">84.5</td>
+        <td align="center">83.3%</td>
+        <td align="center">68.0%</td>
+        <td align="center">78.7</td>
     </tr>
     <tr>
         <td align="center">4</td>
-        <td align="center">o1-mini</td>
-        <td align="center">81.2%</td>
-        <td align="center">80.0%</td>
-        <td align="center">80.9</td>
+        <td align="center">Claude 3.5 Sonnet</td>
+        <td align="center">76.2%</td>
+        <td align="center">67.1%</td>
+        <td align="center">73.5</td>
     </tr>
     <tr>
         <td align="center">5</td>
-        <td align="center">Claude 3.5 Sonnet</td>
-        <td align="center">78.1%</td>
-        <td align="center">67.8%</td>
-        <td align="center">75.0</td>
+        <td align="center">o1-mini</td>
+        <td align="center">69.0%</td>
+        <td align="center">81.3%</td>
+        <td align="center">72.7</td>
     </tr>
     <tr>
         <td align="center">6</td>
-        <td align="center">GPT 4o</td>
-        <td align="center">59.4%</td>
-        <td align="center">67.9%</td>
-        <td align="center">61.9</td>
+        <td align="center">Gemini</td>
+        <td align="center">47.6%</td>
+        <td align="center">88.2%</td>
+        <td align="center">59.8</td>
     </tr>
     <tr>
         <td align="center">7</td>
-        <td align="center">Qwen-QwQ</td>
-        <td align="center">56.2%</td>
-        <td align="center">74.4%</td>
-        <td align="center">61.7</td>
+        <td align="center">MS Copilot</td>
+        <td align="center">52.4%</td>
+        <td align="center">77.0%</td>
+        <td align="center">59.8</td>
     </tr>
     <tr>
         <td align="center">8</td>
-        <td align="center">Gemini</td>
-        <td align="center">46.9%</td>
-        <td align="center">91.7%</td>
-        <td align="center">60.3</td>
+        <td align="center">GPT 4o</td>
+        <td align="center">54.8%</td>
+        <td align="center">63.7%</td>
+        <td align="center">57.5</td>
     </tr>
     <tr>
         <td align="center">9</td>
-        <td align="center">MS Copilot</td>
-        <td align="center">50.0%</td>
-        <td align="center">73.2%</td>
-        <td align="center">57.0</td>
+        <td align="center">Qwen-QwQ</td>
+        <td align="center">52.4%</td>
+        <td align="center">69.2%</td>
+        <td align="center">57.4</td>
     </tr>
     <tr>
         <td align="center">10</td>
         <td align="center">Qwen2.5-Coder-32b</td>
-        <td align="center">34.4%</td>
-        <td align="center">94.4%</td>
-        <td align="center">52.4</td>
+        <td align="center">31.0%</td>
+        <td align="center">95.0%</td>
+        <td align="center">50.2</td>
     </tr>
     <tr>
         <td align="center">11</td>
-        <td align="center">Qwen2.5-72b</td>
-        <td align="center">46.9%</td>
-        <td align="center">63.7%</td>
-        <td align="center">51.9</td>
+        <td align="center">Llama 3.3</td>
+        <td align="center">45.2%</td>
+        <td align="center">53.2%</td>
+        <td align="center">47.6</td>
     </tr>
     <tr>
         <td align="center">12</td>
-        <td align="center">Llama 3.3</td>
-        <td align="center">50.0%</td>
-        <td align="center">52.8%</td>
-        <td align="center">50.8</td>
+        <td align="center">Qwen2.5-72b</td>
+        <td align="center">40.5%</td>
+        <td align="center">63.9%</td>
+        <td align="center">47.5</td>
     </tr>
 </table>
 
@@ -202,15 +343,15 @@ The models are ranked using a composite score:
         <th align="center" colspan="3">o1</th>
         <th align="center" colspan="3">o1-preview</th>
         <th align="center" colspan="3">R1-Lite</th>
-        <th align="center" colspan="3">o1-mini</th>
         <th align="center" colspan="3">Claude 3.5 Sonnet</th>
-        <th align="center" colspan="3">GPT 4o</th>
-        <th align="center" colspan="3">Qwen-QwQ</th>
+        <th align="center" colspan="3">o1-mini</th>
         <th align="center" colspan="3">Gemini</th>
         <th align="center" colspan="3">MS Copilot</th>
+        <th align="center" colspan="3">GPT 4o</th>
+        <th align="center" colspan="3">Qwen-QwQ</th>
         <th align="center" colspan="3">Qwen2.5-Coder-32b</th>
-        <th align="center" colspan="3">Qwen2.5-72b</th>
         <th align="center" colspan="3">Llama 3.3</th>
+        <th align="center" colspan="3">Qwen2.5-72b</th>
     </tr>
     <tr>
         <th align="center">P1</th><th align="center">P2</th><th align="center">E</th>
@@ -246,6 +387,12 @@ The models are ranked using a composite score:
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
         <td align="center" bgcolor="#FFA500">5</td>
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center">l</td>
@@ -256,14 +403,8 @@ The models are ranked using a composite score:
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center"></td>
         <td align="center" bgcolor="#90EE90">1</td>
-        <td align="center" bgcolor="#90EE90">1</td>
-        <td align="center"></td>
-        <td align="center" bgcolor="#90EE90">1</td>
         <td align="center" bgcolor="#98FB98">2</td>
         <td align="center">s</td>
-        <td align="center" bgcolor="#90EE90">1</td>
-        <td align="center" bgcolor="#90EE90">1</td>
-        <td align="center"></td>
     </tr>
     <tr>
         <td align="center">02</td>
@@ -298,14 +439,20 @@ The models are ranked using a composite score:
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center"></td>
         <td align="center" bgcolor="#90EE90">1</td>
-        <td align="center" bgcolor="#98FB98">2</td>
-        <td align="center">s</td>
-        <td align="center" bgcolor="#90EE90">1</td>
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#98FB98">2</td>
+        <td align="center">s</td>
     </tr>
     <tr>
         <td align="center">03</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center"></td>
@@ -331,16 +478,10 @@ The models are ranked using a composite score:
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center"></td>
         <td align="center" bgcolor="#90EE90">1</td>
-        <td align="center" bgcolor="#90EE90">1</td>
-        <td align="center"></td>
-        <td align="center" bgcolor="#90EE90">1</td>
-        <td align="center" bgcolor="#90EE90">1</td>
-        <td align="center"></td>
-        <td align="center" bgcolor="#90EE90">1</td>
-        <td align="center" bgcolor="#98FB98">2</td>
+        <td align="center" bgcolor="#FFA500">5</td>
         <td align="center">l</td>
         <td align="center" bgcolor="#90EE90">1</td>
-        <td align="center" bgcolor="#FFA500">5</td>
+        <td align="center" bgcolor="#98FB98">2</td>
         <td align="center">l</td>
     </tr>
     <tr>
@@ -365,13 +506,13 @@ The models are ranked using a composite score:
         <td align="center">l</td>
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
         <td align="center">l,s</td>
-        <td align="center" bgcolor="#90EE90">1</td>
-        <td align="center" bgcolor="#FFB6C6">X</td>
-        <td align="center">l</td>
-        <td align="center" bgcolor="#90EE90">1</td>
-        <td align="center" bgcolor="#FFB6C6">X</td>
-        <td align="center">l</td>
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center" bgcolor="#FFB6C6">X</td>
         <td align="center">l</td>
@@ -432,11 +573,17 @@ The models are ranked using a composite score:
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center"></td>
+        <td align="center" bgcolor="#98FB98">2</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center">l</td>
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center"></td>
-        <td align="center" bgcolor="#98FB98">2</td>
-        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#FFFFFF"></td>
+        <td align="center" bgcolor="#FFFFFF"></td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
         <td align="center">l</td>
         <td align="center" bgcolor="#FFB6C6">X</td>
         <td align="center" bgcolor="#FFB6C6">-</td>
@@ -444,21 +591,15 @@ The models are ranked using a composite score:
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center" bgcolor="#FFB6C6">X</td>
         <td align="center">l</td>
-        <td align="center" bgcolor="#FFFFFF"></td>
-        <td align="center" bgcolor="#FFFFFF"></td>
-        <td align="center"></td>
-        <td align="center" bgcolor="#FFB6C6">X</td>
-        <td align="center" bgcolor="#FFB6C6">-</td>
-        <td align="center">l</td>
         <td align="center" bgcolor="#98FB98">2</td>
         <td align="center" bgcolor="#FFB6C6">X</td>
         <td align="center">l</td>
-        <td align="center" bgcolor="#90EE90">1</td>
-        <td align="center" bgcolor="#FFB6C6">X</td>
-        <td align="center">l</td>
         <td align="center" bgcolor="#FFFFFF"></td>
         <td align="center" bgcolor="#FFFFFF"></td>
         <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center">l</td>
     </tr>
     <tr>
         <td align="center">07</td>
@@ -472,32 +613,32 @@ The models are ranked using a composite score:
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center"></td>
         <td align="center" bgcolor="#90EE90">1</td>
-        <td align="center" bgcolor="#90EE90">1</td>
-        <td align="center"></td>
-        <td align="center" bgcolor="#90EE90">1</td>
         <td align="center" bgcolor="#FFE4B5">3</td>
         <td align="center">l</td>
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center"></td>
+        <td align="center" bgcolor="#FFFFFF"></td>
+        <td align="center" bgcolor="#FFFFFF"></td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
         <td align="center" bgcolor="#FFFFFF"></td>
         <td align="center" bgcolor="#FFFFFF"></td>
         <td align="center"></td>
         <td align="center" bgcolor="#FFB6C6">X</td>
         <td align="center" bgcolor="#FFB6C6">-</td>
         <td align="center">l</td>
-        <td align="center" bgcolor="#FFB6C6">X</td>
-        <td align="center" bgcolor="#FFB6C6">-</td>
-        <td align="center">l</td>
-        <td align="center" bgcolor="#FFB6C6">X</td>
-        <td align="center" bgcolor="#FFB6C6">-</td>
-        <td align="center">l</td>
-        <td align="center" bgcolor="#FFFFFF"></td>
-        <td align="center" bgcolor="#FFFFFF"></td>
-        <td align="center"></td>
     </tr>
     <tr>
         <td align="center">08</td>
@@ -510,18 +651,12 @@ The models are ranked using a composite score:
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center" bgcolor="#98FB98">2</td>
         <td align="center">l</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center" bgcolor="#98FB98">2</td>
         <td align="center">l</td>
-        <td align="center" bgcolor="#FFB6C6">X</td>
-        <td align="center" bgcolor="#FFB6C6">-</td>
-        <td align="center">l</td>
-        <td align="center" bgcolor="#FFB6C6">X</td>
-        <td align="center" bgcolor="#FFB6C6">-</td>
-        <td align="center">l</td>
-        <td align="center" bgcolor="#FFB6C6">X</td>
-        <td align="center" bgcolor="#FFB6C6">-</td>
-        <td align="center">l,s</td>
         <td align="center" bgcolor="#FFFFFF"></td>
         <td align="center" bgcolor="#FFFFFF"></td>
         <td align="center"></td>
@@ -533,10 +668,16 @@ The models are ranked using a composite score:
         <td align="center">l</td>
         <td align="center" bgcolor="#FFB6C6">X</td>
         <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l,s</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
         <td align="center">l</td>
         <td align="center" bgcolor="#FFFFFF"></td>
         <td align="center" bgcolor="#FFFFFF"></td>
         <td align="center"></td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
     </tr>
     <tr>
         <td align="center">09</td>
@@ -549,18 +690,12 @@ The models are ranked using a composite score:
         <td align="center" bgcolor="#98FB98">2</td>
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center">l</td>
-        <td align="center" bgcolor="#FFB6C6">X</td>
-        <td align="center" bgcolor="#FFB6C6">-</td>
-        <td align="center">l</td>
         <td align="center" bgcolor="#FFE4B5">3</td>
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center">l</td>
         <td align="center" bgcolor="#FFB6C6">X</td>
         <td align="center" bgcolor="#FFB6C6">-</td>
         <td align="center">l</td>
-        <td align="center" bgcolor="#FFB6C6">X</td>
-        <td align="center" bgcolor="#FFB6C6">-</td>
-        <td align="center">l</td>
         <td align="center" bgcolor="#FFFFFF"></td>
         <td align="center" bgcolor="#FFFFFF"></td>
         <td align="center"></td>
@@ -573,9 +708,15 @@ The models are ranked using a composite score:
         <td align="center" bgcolor="#FFB6C6">X</td>
         <td align="center" bgcolor="#FFB6C6">-</td>
         <td align="center">l</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
         <td align="center" bgcolor="#FFFFFF"></td>
         <td align="center" bgcolor="#FFFFFF"></td>
         <td align="center"></td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
     </tr>
     <tr>
         <td align="center">10</td>
@@ -589,10 +730,16 @@ The models are ranked using a composite score:
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center">l</td>
         <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#FFE4B5">3</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#90EE90">1</td>
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center"></td>
         <td align="center" bgcolor="#90EE90">1</td>
-        <td align="center" bgcolor="#FFE4B5">3</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#98FB98">2</td>
+        <td align="center" bgcolor="#90EE90">1</td>
         <td align="center">l</td>
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center" bgcolor="#90EE90">1</td>
@@ -600,20 +747,14 @@ The models are ranked using a composite score:
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center" bgcolor="#98FB98">2</td>
         <td align="center">l</td>
-        <td align="center" bgcolor="#90EE90">1</td>
-        <td align="center" bgcolor="#90EE90">1</td>
-        <td align="center"></td>
-        <td align="center" bgcolor="#FFFFFF"></td>
-        <td align="center" bgcolor="#FFFFFF"></td>
-        <td align="center"></td>
         <td align="center" bgcolor="#FFB6C6">X</td>
         <td align="center" bgcolor="#FFB6C6">-</td>
         <td align="center">l</td>
-        <td align="center" bgcolor="#90EE90">1</td>
-        <td align="center" bgcolor="#FFA500">5</td>
-        <td align="center">l</td>
         <td align="center" bgcolor="#FFE4B5">3</td>
         <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#FFA500">5</td>
         <td align="center">l</td>
     </tr>
     <tr>
@@ -628,6 +769,9 @@ The models are ranked using a composite score:
         <td align="center" bgcolor="#FFB6C6">X</td>
         <td align="center">l</td>
         <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#90EE90">1</td>
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center"></td>
         <td align="center" bgcolor="#90EE90">1</td>
@@ -637,22 +781,19 @@ The models are ranked using a composite score:
         <td align="center" bgcolor="#FFE4B5">3</td>
         <td align="center">l</td>
         <td align="center" bgcolor="#90EE90">1</td>
-        <td align="center" bgcolor="#FFB6C6">X</td>
-        <td align="center">l</td>
-        <td align="center" bgcolor="#90EE90">1</td>
-        <td align="center" bgcolor="#FFB6C6">X</td>
-        <td align="center">l</td>
-        <td align="center" bgcolor="#90EE90">1</td>
         <td align="center" bgcolor="#FFE4B5">3</td>
         <td align="center">l</td>
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center" bgcolor="#FFB6C6">X</td>
         <td align="center">l</td>
         <td align="center" bgcolor="#90EE90">1</td>
-        <td align="center" bgcolor="#FFA07A">4</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
         <td align="center">l</td>
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#FFA07A">4</td>
         <td align="center">l</td>
     </tr>
     <tr>
@@ -672,27 +813,27 @@ The models are ranked using a composite score:
         <td align="center" bgcolor="#98FB98">2</td>
         <td align="center" bgcolor="#FFB6C6">X</td>
         <td align="center">l</td>
-        <td align="center" bgcolor="#FFB6C6">X</td>
-        <td align="center" bgcolor="#FFB6C6">-</td>
-        <td align="center">l</td>
-        <td align="center" bgcolor="#98FB98">2</td>
-        <td align="center" bgcolor="#FFB6C6">X</td>
-        <td align="center">l,s</td>
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center" bgcolor="#FFB6C6">X</td>
         <td align="center">l</td>
         <td align="center" bgcolor="#98FB98">2</td>
         <td align="center" bgcolor="#FFB6C6">X</td>
         <td align="center">s</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#98FB98">2</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center">l,s</td>
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center" bgcolor="#FFB6C6">X</td>
         <td align="center">l,s</td>
-        <td align="center" bgcolor="#FFB6C6">X</td>
-        <td align="center" bgcolor="#FFB6C6">-</td>
-        <td align="center">l,x</td>
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center" bgcolor="#FFB6C6">X</td>
         <td align="center">l</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l,s</td>
     </tr>
     <tr>
         <td align="center">13</td>
@@ -706,10 +847,16 @@ The models are ranked using a composite score:
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center">l</td>
         <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#FFA07A">4</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#90EE90">1</td>
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center"></td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
         <td align="center" bgcolor="#90EE90">1</td>
-        <td align="center" bgcolor="#FFA07A">4</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
         <td align="center">l</td>
         <td align="center" bgcolor="#98FB98">2</td>
         <td align="center" bgcolor="#FFB6C6">X</td>
@@ -720,16 +867,10 @@ The models are ranked using a composite score:
         <td align="center" bgcolor="#FFB6C6">X</td>
         <td align="center" bgcolor="#FFB6C6">-</td>
         <td align="center">l</td>
-        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#FFA500">5</td>
         <td align="center" bgcolor="#FFB6C6">X</td>
-        <td align="center">l</td>
-        <td align="center" bgcolor="#FFB6C6">X</td>
-        <td align="center" bgcolor="#FFB6C6">-</td>
         <td align="center">l</td>
         <td align="center" bgcolor="#98FB98">2</td>
-        <td align="center" bgcolor="#FFB6C6">X</td>
-        <td align="center">l</td>
-        <td align="center" bgcolor="#FFA500">5</td>
         <td align="center" bgcolor="#FFB6C6">X</td>
         <td align="center">l</td>
     </tr>
@@ -751,6 +892,12 @@ The models are ranked using a composite score:
         <td align="center" bgcolor="#FFB6C6">X</td>
         <td align="center">l</td>
         <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#FFFFFF">x</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
         <td align="center" bgcolor="#98FB98">2</td>
         <td align="center">l</td>
         <td align="center" bgcolor="#90EE90">1</td>
@@ -759,17 +906,11 @@ The models are ranked using a composite score:
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center" bgcolor="#FFB6C6">X</td>
         <td align="center">l</td>
-        <td align="center" bgcolor="#90EE90">1</td>
-        <td align="center" bgcolor="#90EE90">1</td>
-        <td align="center"></td>
-        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#FFA07A">4</td>
         <td align="center" bgcolor="#FFB6C6">X</td>
         <td align="center">l</td>
         <td align="center" bgcolor="#FFB6C6">X</td>
         <td align="center" bgcolor="#FFB6C6">-</td>
-        <td align="center">l</td>
-        <td align="center" bgcolor="#FFA07A">4</td>
-        <td align="center" bgcolor="#FFB6C6">X</td>
         <td align="center">l</td>
     </tr>
     <tr>
@@ -789,27 +930,27 @@ The models are ranked using a composite score:
         <td align="center" bgcolor="#FFB6C6">X</td>
         <td align="center" bgcolor="#FFB6C6">-</td>
         <td align="center">l</td>
-        <td align="center" bgcolor="#FFFFFF"></td>
-        <td align="center" bgcolor="#FFFFFF"></td>
-        <td align="center"></td>
-        <td align="center" bgcolor="#FFB6C6">X</td>
-        <td align="center" bgcolor="#FFB6C6">-</td>
-        <td align="center">l,s</td>
-        <td align="center" bgcolor="#FFFFFF"></td>
-        <td align="center" bgcolor="#FFFFFF"></td>
-        <td align="center"></td>
         <td align="center" bgcolor="#FFB6C6">X</td>
         <td align="center" bgcolor="#FFB6C6">-</td>
         <td align="center">l</td>
-        <td align="center" bgcolor="#FFFFFF"></td>
-        <td align="center" bgcolor="#FFFFFF"></td>
-        <td align="center"></td>
-        <td align="center" bgcolor="#FFFFFF"></td>
-        <td align="center" bgcolor="#FFFFFF"></td>
-        <td align="center"></td>
-        <td align="center" bgcolor="#FFFFFF"></td>
-        <td align="center" bgcolor="#FFFFFF"></td>
-        <td align="center"></td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l,s</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l,s</td>
     </tr>
     <tr>
         <td align="center">16</td>
@@ -823,22 +964,58 @@ The models are ranked using a composite score:
         <td align="center" bgcolor="#FFB6C6">X</td>
         <td align="center">l</td>
         <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
         <td align="center" bgcolor="#FFA500">5</td>
         <td align="center">l</td>
         <td align="center" bgcolor="#90EE90">1</td>
-        <td align="center" bgcolor="#90EE90">1</td>
-        <td align="center"></td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#FFA07A">4</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center">l</td>
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center" bgcolor="#FFB6C6">X</td>
         <td align="center">l</td>
         <td align="center" bgcolor="#FFB6C6">X</td>
         <td align="center" bgcolor="#FFB6C6">-</td>
         <td align="center">l,s</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#FFE4B5">3</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
+    </tr>
+    <tr>
+        <td align="center">17</td>
+        <td align="center" bgcolor="#98FB98">2</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center">l</td>
         <td align="center" bgcolor="#90EE90">1</td>
         <td align="center" bgcolor="#FFB6C6">X</td>
         <td align="center">l</td>
-        <td align="center" bgcolor="#FFA07A">4</td>
+        <td align="center" bgcolor="#FFA500">5</td>
         <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
         <td align="center">l</td>
         <td align="center" bgcolor="#FFB6C6">X</td>
         <td align="center" bgcolor="#FFB6C6">-</td>
@@ -849,6 +1026,165 @@ The models are ranked using a composite score:
         <td align="center" bgcolor="#FFE4B5">3</td>
         <td align="center" bgcolor="#FFB6C6">X</td>
         <td align="center">l</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l,s</td>
+    </tr>
+    <tr>
+        <td align="center">18</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#FFFFFF"></td>
+        <td align="center" bgcolor="#FFFFFF"></td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#FFFFFF"></td>
+        <td align="center" bgcolor="#FFFFFF"></td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#FFFFFF"></td>
+        <td align="center" bgcolor="#FFFFFF"></td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#FFA500">5</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#98FB98">2</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#FFFFFF"></td>
+        <td align="center" bgcolor="#FFFFFF"></td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#FFFFFF"></td>
+        <td align="center" bgcolor="#FFFFFF"></td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#FFFFFF"></td>
+        <td align="center" bgcolor="#FFFFFF"></td>
+        <td align="center"></td>
+    </tr>
+    <tr>
+        <td align="center">19</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#FFA07A">4</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#FFE4B5">3</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#FFE4B5">3</td>
+        <td align="center">l,s</td>
+    </tr>
+    <tr>
+        <td align="center">20</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center" bgcolor="#90EE90">1</td>
+        <td align="center"></td>
+        <td align="center" bgcolor="#FFA500">5</td>
+        <td align="center" bgcolor="#98FB98">2</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#98FB98">2</td>
+        <td align="center" bgcolor="#FFA07A">4</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#FFE4B5">3</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l,s</td>
+    </tr>
+    <tr>
+        <td align="center">21</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l</td>
+        <td align="center" bgcolor="#FFB6C6">X</td>
+        <td align="center" bgcolor="#FFB6C6">-</td>
+        <td align="center">l,s</td>
     </tr>
 </table>
 
@@ -868,4 +1204,4 @@ The models are ranked using a composite score:
 * On day 08 o1-mini and R1-Lite produced a similar solution for Part 2 in their first try with the same wrong answer. 
 * On day 09 o1's solution was 0-shot but took 1m30s, R1-Lite took one follow-up prompt but resulted in a solution that takes less than 1s.
 * On day 13 o1-preview even though explicitly asked about the python code, initially returned a step by step instruction on how to achieve the solution for part 2 but not the python code. Since I had to ask about the full implementatoin manually I counted this as a second try and marked it as syntax issue.
-* 
+* Qwen2.5-72b has been the model that produced by fare the most gibberish output, where it sometimes repeatedly got stuck in outputting the same nonesense.
