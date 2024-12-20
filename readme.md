@@ -30,7 +30,7 @@ The models are rated on 0-shot prompting. If this does not work, they are being 
 <!--
 
 ## Overview
-| Day | Claude 3.5 | MS Copilot | GPT 4o  | o1-mini | o1-preview | o1      | Qwen2.5-72b | Qwen Coder | Qwen-QwQ  | R1-Lite | Llama 3.3 | Gemini  | Phi     |
+| Day | Claude 3.5 | MS Copilot | GPT 4o  | o1-mini | o1-preview | o1      | Qwen2.5-72b | Qwen Coder | Qwen-QwQ  | R1-Lite | Llama 3.3 | Gemini  | Phi 4   |
 | --- | ---        | ---        | ---     | ---     | ---        | ---     | ---         | ---        | ---       | ---     | ---       | ---     | ---     |
 | 01  | 1/1        | 1/1        | 1/1     | 1/1     | 1/1        | 1/1     | 1/2 (s)     | 1/1        | 5/1 (l)   | 1/1     | 1/1       | 1/1     | 1/1     |
 | 02  | 1/1        | 1/1        | 1/1     | 1/1     | 1/1        | 1/1     | 1/2 (s)     | 1/1        | 1/1       | 1/1     | 1/1       | 1/1     | 1/1     |
@@ -43,11 +43,14 @@ The models are rated on 0-shot prompting. If this does not work, they are being 
 | 09  | 3/1 (l)    | X/- (l)    | X/- (l) | X/- (l) | 1/1        | 1/1     | X/- (l)     | X/- (l)    | X/- (l)   | 2/1 (l) |           |         |         |
 | 10  | 1/3 (l)    | 2/1 (l)    | 1/1     | 1/1     | 1/1        | 1/1     | 1/5 (l)     | X/- (l)    | 1/2 (l)   | 2/1 (l) | 3/1 (l)   | 1/1     |         |
 | 11  | 1/X (l)    | 1/3 (l)    | 1/3 (l) | 1/1     | 2/1 (l)    | 1/3 (l) | 1/4 (l)     | 1/X (l)    | 1/X (l)   | 1/X (l) | 1/X (l)   | 1/X (l) |         |
-| 12  | 2/X (l)    | 2/X (s)    | X/- (l) | 2/X (l) | 1/X (l)    | 1/X (l) | X/- (l,x)   | 1/X (l,s)  | 2/X (l,s) | 1/5 (l) | 1/X (l)   | 1/X (l) |         |
+| 12  | 2/X (l)    | 2/X (s)    | X/- (l) | 2/X (l) | 1/X (l)    | 1/X (l) | X/- (l,s)   | 1/X (l,s)  | 2/X (l,s) | 1/5 (l) | 1/X (l)   | 1/X (l) |         |
 | 13  | 1/4 (l)    | 1/X (l)    | 2/X (l) | 1/1     | 1/2 (s)    | 1/1     | 2/X (l)     | X/- (l)    | 3/X (l)   | 2/1 (l) | 5/X (l)   | X/- (l) |         |
 | 14  | 1/X (l)    | 1/1        | 1/2 (l) | 1/X (l) | 1/X (l)    | 1/X (l) | X/- (l)     | 1/X (l)    | 1/X (l)   | 1/X (l) | 4/X (l)   | 1/x (l) |         |
 | 15  | X/- (l)    | X/- (l)    |         | X/- (l) | X/- (l)    | 1/X (l) |             |            | X/- (l,s) | 1/X (l) |           |         | X/- (l) |
 | 16  | 1/1        | 4/X (l)    | 1/X (l) | 1/5 (l) | 1/1        | 1/1     | X/- (l)     | X/- (l)    | X/- (l,s) | 1/X (l) | 3/X (l)   | 1/X (l) |         |
+| 17  | 1/X (l)    | X/- (l)    |         |         |            | 2/X (l) |             |            | X/- (l)   | 5/X (l) |           |         |         |
+| 18  | 1/1        | 1/1        | 5/1 (l) |         |            | 1/1     |             |            | 1/2 (l)   | 1/1     |           |         |         |
+| 19  |            | 1/1        | 1/1     | 1/1     | 1/1        | 1/1     | 1/3 (l,s)   |            | 4/1 (l)   | 1/1     | 1         |         |         |
 | XX  |            |            |         |         |            |         |             |            |           |         |           |         |         |
 
 -->
