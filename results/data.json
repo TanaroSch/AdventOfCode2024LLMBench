@@ -250,7 +250,7 @@
         "Qwen-QwQ": { "part1": "1", "part2": "X", "errors": ["l"] },
         "R1-Lite": { "part1": "1", "part2": "X", "errors": ["l"] },
         "Llama 3.3": { "part1": "4", "part2": "X", "errors": ["l"] },
-        "Gemini": { "part1": "1", "part2": "x", "errors": ["l"] }
+        "Gemini": { "part1": "1", "part2": "X", "errors": ["l"] }
       }
     },
     {
@@ -312,9 +312,15 @@
         "Claude 3.5 Sonnet": { "part1": "1", "part2": "1" },
         "MS Copilot": { "part1": "1", "part2": "1" },
         "GPT 4o": { "part1": "5", "part2": "1", "errors": ["l"] },
+        "o1-mini": { "part1": "1", "part2": "4", "errors": ["l"] },
+        "o1-preview": { "part1": "1", "part2": "1" },
         "o1": { "part1": "1", "part2": "1" },
+        "Qwen2.5-72b": { "part1": "1", "part2": "1" },
+        "Qwen2.5-Coder-32b": { "part1": "1", "part2": "1" },
         "Qwen-QwQ": { "part1": "1", "part2": "2", "errors": ["l"] },
-        "R1-Lite": { "part1": "1", "part2": "1" }
+        "R1-Lite": { "part1": "1", "part2": "1" },
+        "Llama 3.3": { "part1": "1", "part2": "1" },
+        "Gemini": { "part1": "1", "part2": "1" }
       }
     },
     {
@@ -366,6 +372,44 @@
         "R1-Lite": { "part1": "X", "part2": "-", "errors": ["l"] },
         "Llama 3.3": { "part1": "X", "part2": "-", "errors": ["l"] },
         "Gemini": { "part1": "X", "part2": "-", "errors": ["l"] }
+      }
+    },
+    {
+      "day": "22",
+      "results": {
+        "Claude 3.5 Sonnet": { "part1": "1", "part2": "4", "errors": ["l"] },
+        "MS Copilot": { "part1": "1", "part2": "X", "errors": ["l"] },
+        "GPT 4o": { "part1": "1", "part2": "X", "errors": ["l"] },
+        "o1-mini": { "part1": "1", "part2": "1" },
+        "o1-preview": { "part1": "1", "part2": "1", "errors": ["l"] },
+        "o1": { "part1": "1", "part2": "1" },
+        "Qwen2.5-72b": { "part1": "X", "part2": "-", "errors": ["l", "s"] },
+        "Qwen2.5-Coder-32b": { "part1": "1", "part2": "X", "errors": ["l"] },
+        "Qwen-QwQ": { "part1": "1", "part2": "X", "errors": ["l"] },
+        "R1-Lite": { "part1": "1", "part2": "1" },
+        "Llama 3.3": { "part1": "1", "part2": "X", "errors": ["l"] },
+        "Gemini": { "part1": "1", "part2": "X", "errors": ["l"] }
+      }
+    },
+    {
+      "day": "23",
+      "results": {
+        "Claude 3.5 Sonnet": { "part1": "1", "part2": "3", "errors": ["l"] },
+        "MS Copilot": { "part1": "1", "part2": "3", "errors": ["l"] },
+        "GPT 4o": { "part1": "1", "part2": "2", "errors": ["l"] },
+        "o1-mini": { "part1": "1", "part2": "1" },
+        "o1-preview": { "part1": "1", "part2": "1" },
+        "o1": { "part1": "1", "part2": "1" },
+        "Qwen2.5-72b": { "part1": "1", "part2": "X", "errors": ["l"] },
+        "Qwen2.5-Coder-32b": {
+          "part1": "1",
+          "part2": "3",
+          "errors": ["l", "s"]
+        },
+        "Qwen-QwQ": { "part1": "1", "part2": "2", "errors": ["s"] },
+        "R1-Lite": { "part1": "1", "part2": "1" },
+        "Llama 3.3": { "part1": "1", "part2": "2", "errors": ["l"] },
+        "Gemini": { "part1": "1", "part2": "2", "errors": ["l"] }
       }
     }
   ]
