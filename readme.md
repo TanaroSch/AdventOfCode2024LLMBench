@@ -55,7 +55,8 @@ The models are rated on 0-shot prompting. If this does not work, they are being 
 | 21  | X/- (l)    | X/- (l)    | X/- (l) | X/- (l) | X/- (l)    | X/- (l) | X/- (l,s)   | X/- (l)    | X/- (l)   | X/- (l) | X/- (l)   | X/- (l) |         |
 | 22  | 1/4 (l)    | 1/X (l)    | 1/X (l) | 1/1     | 1/1 (l)    | 1/1     | X/- (l,s)   | 1/X (l)    | 1/X (l)   | 1/1     | 1/X (l)   | 1/X (l) |         |
 | 23  | 1/3 (l)    | 1/3 (l)    | 1/2 (l) | 1/1     | 1/1        | 1/1     | 1/X (l)     | 1/3 (l,s)  | 1/2 (s)   | 1/1     | 1/2 (l)   | 1/2 (l) |         |
-| XX  |            |            |         |         |            |         |             |            |           |         |           |         |         |
+| 24  | X/- (l)    |            |         |         |            | 1/X (l) |             |            | X/- (l)   | 1/X (l) |           |         |         |
+| 25  |            |            |         |         |            |         |             |            |           |         |           |         |         |
 
 Results Day 21:
 34224 - too low!
@@ -66,6 +67,11 @@ Results Day 21:
 168140 - too low!
 198904 - too high!
 485212
+
+Results Day 24:
+z00,z01,z02,z03,z04,z05,z06,z07
+z00,z01,z02,z03,z04,z05,z06,z07
+bbq,jjs,nkr,ppw,qnv,tkn,wcw,z34
 
 -->
 
